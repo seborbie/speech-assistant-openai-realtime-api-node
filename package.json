@@ -1,20 +1,28 @@
 {
   "name": "speech-assistant-openai-realtime-api-node",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A speech assistant using OpenAI's Realtime API with Twilio",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "@fastify/formbody": "^8.0.0",
-    "@fastify/websocket": "^11.0.0",
-    "dotenv": "^16.4.5",
-    "fastify": "^5.0.0",
-    "ws": "^8.18.0"
+    "@fastify/cors": "^8.5.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/websocket": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
   }
 }
